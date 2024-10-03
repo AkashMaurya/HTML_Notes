@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Tag types</title>
+</head>
+
+<body>
+
+    <a href="./index.html">tags sections</a>
+
+    <a href="./sementancis_tabs.html">Semantics sections</a>
+
+    <h1>HTML Tag Types</h1>
+
+    <!-- in form tag -->
+
+    <form action="#">
+        <!-- Choose the Color of your favorite -->
+        <label for="favcolor">Choose your favorite color:</label>
+        <input type="color" class="favcolor" name="favcolor" value="#ff0000" />
+        <br>
+
+        <br>
+
+        <!-- Choose the Date from the calander -->
+        <label for="startdate">Start Date:</label>
+        <input type="date" id="startdate" name="startdate" />
+
+        <br>
+
+        <br>
+
+        <!-- Choose the Date and time from the calander -->
+        <label for="meeting">Schedule Meeting:</label>
+        <input type="datetime-local" id="meeting" name="meeting" />
+        <br>
+
+        <br>
+
+
+        <!-- Choose the month from the calander -->
+        <label for="expiry">Credit Card Expiry Date:</label>
+        <input type="month" id="expiry" name="expiry" />
+        <br>
+
+        <br>
+        <!-- Choose the Week from the calander -->
+        <label for="week">Select Week:</label>
+        <input type="week" id="week" name="week" />
+
+
+        <br>
+
+        <br>
+        <!-- Choose the time from the clock -->
+        <label for="week">Select Time:</label>
+        <input type="time" id="week" name="week" />
+
+
+        <br>
+        <br>
+        <!-- Choose the Range  from the control -->
+        <label for="volume">Volume Control:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" value="50" / <br>
+
+        <br>
+
+        <!-- Choose the Serach  from the search type -->
+        <label for="site-search">Search the site:</label>
+        <input type="search" id="site-search" name="q" placeholder="Search..." autocomplete="on" />
+        <input type="submit" value="Search" />
+
+
+        <br>
+        <br>
+        <!-- Choose the telephone no  from the tel type -->
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" maxlength="10" min="10"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required />
+
+        <br>
+        <br>
+        <!-- type the eamil   from the email type -->
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
+        <input type="submit" />
+
+        <dialog id="myDialog">
+            <h2>Confirmation</h2>
+            <p>Are you sure you want to proceed?</p>
+            <button>Yes</button>
+            <button>No</button>
+        </dialog>
+
+        <br>
+        <sub>sakdgkasdnn</sub>
+        <br>
+        <summary>Click here to open the dialog</summary>
+        <br>
+        <label for="textarea">Text Area:</label>
+        <br>
+        <textarea name="message" id="textarea" rows="4"
+            cols="80">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, necessitatibus error? Quis, tempora voluptate? Quisquam sequi impedit provident, dolores accusantium culpa pariatur deserunt dolorem voluptate.</textarea>
+    </form>
+
+    <br><br>
+
+    <!-- table  -->
+    <table border="1">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+
+
+    <!-- select tag -->
+    <form action=""><label for="cars">Cars</label>
+        <select id="cars" required>
+            <option value=""></option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+
+        </select>
+        <input type="submit">
+
+    </form>
+
+
+    <!-- <footer>: Represents the page or section footer. -->
+    <br>
+    <br>
+    <footer>
+        this is my footer
+    </footer>
+
+
+    <br>
+    <br>
+    <!-- this is video tag -->
+  
+    <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <track
+        src="subtitles_en.vtt"
+        kind="subtitles"
+        srclang="en"
+        label="English"
+      />
+        Your browser does not support the video tag.
+    </video>
+
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+     
+        Your browser does not support the audio tag.
+    </audio>
+
+    <iframe
+    width="560"
+    height="315"
+    
+    src="https://www.youtube.com/embed/vvfs2TUj-D4"
+  ></iframe>
+
+  <!-- src="https://www.youtube.com/embed/vvfs2TUj-D4" section ko is trh likhene se iframe kaam kar sakta hai -->
+<br>
+
+<h1>Objects</h1>
+
+<object
+  data="https://getsamplefiles.com/sample-document-files/pdf"
+  type="application/pdf"
+  width="600"
+  height="500"
+>
+  Your browser does not support embedded PDFs.
+</object>
+
+<br>
+</body>
+
+</html>
